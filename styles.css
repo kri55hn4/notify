@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #634997;
+    background-color: #969aa4;
+    background-image: 
+    radial-gradient(at 47% 33%, hsl(211.43, 82%, 65%) 0, transparent 59%), 
+    radial-gradient(at 82% 65%, hsl(240.00, 100%, 50%) 0, transparent 55%);
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width:40%;
+    height:50%;
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.gradient-background {
+    background: rgba(17, 25, 40, 0.75);;
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+/* In your CSS file */
+.timer-clock {
+    color: #ffffff; /* Change this to your desired color */
+  }
+  
+h1{
+    padding-top:15%;
+    color:#fff;
+}
+input {
+    width: 60px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+label{
+    color:#e3e1e6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: linear-gradient(to right, #05201e, #6cabc5);
+    }
+      
+button:hover {
+        background: linear-gradient(to right, #007bff, #004085);
+        box-shadow: 0 0 15px #007bff;
+        animation: pulse 0.2s;
+        }
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  }
